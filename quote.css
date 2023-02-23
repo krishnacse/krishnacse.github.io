@@ -1,0 +1,138 @@
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 200px 0 0 600px;
+    color: darkred;
+    font-style: italic;
+    text-shadow: 0 0 10px white;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: capitalize;
+    animation: flick 100s infinite;
+}
+@keyframes flick {
+  0% {color: red;}
+  10% {color: green;}
+  20% {color: blue;}
+  30% {color: red;}
+  40% {color: green;}
+  50% {color: brown;}
+  60% {color: purple;}
+  70% {color: saddlebrown;}
+  80% {color: darkolivegreen;}
+  90% {color: blueviolet;}
+  100%{color: black;}
+}
+
+.leaves {
+    height: 100%;  
+    position: fixed;
+  }
+  
+  .leaf1 {
+    position: absolute;
+    font-size: 70px;
+    top:0;
+    animation: fall 5s linear infinite;
+  }
+  
+  .leaf2 {
+    position: absolute;
+    font-size: 55px;
+    top:0;
+    animation: fall2 6s linear infinite;
+  }
+  
+  .leaf3 {
+    position: absolute;
+    font-size: 40px;
+    top:-400px;
+    left:-100px;
+    animation: fall 4s linear infinite 1s;
+  }
+  .leaf4 {
+    position: absolute;
+    font-size: 45px;
+    top:-400px;
+    left:300px;
+    animation: fall2 4s linear infinite 1.5s;
+  }
+  .leaf5 {
+    position: absolute;
+    font-size: 55px;
+    top:-410px;
+    left:250px;
+    animation: fall3 4s linear infinite 2s;
+  }
+  .leaf6 {
+    position: absolute;
+    font-size: 55px;
+    top:-410px;
+    left:-250px;
+    animation: fall3 4s linear infinite 1.5s;
+  }
+  .leaf7 {
+    position: absolute;
+    font-size: 35px;
+    top:-410px;
+    left:-350px;
+    animation: fall2 5s linear infinite .5s;
+  }
+  .leaf8 {
+    position: absolute;
+    font-size: 75px;
+    top:-430px;
+    left:550px;
+    animation: fall3 5s linear infinite .5s;
+  }
+  .leaf9 {
+    position: absolute;
+    font-size: 35px;
+    top:-430px;
+    left:150px;
+    animation: fall4 6s linear infinite .3s;
+  }
+  .leaf10 {
+    position: absolute;
+    font-size: 55px;
+    top:-430px;
+    left:450px;
+    animation: fall5 3.7s linear infinite 1.3s;
+  }
+  .leaf11 {
+    position: absolute;
+    font-size: 55px;
+    top:-430px;
+    left:650px;
+    animation: fall5 4.7s linear infinite 1.7s;
+  }
+
+  @keyframes fall {
+    0% {top:-410px; transform: translateX(-100px) rotateX(180deg);}
+    100% {top:400px; transform: translateX(250px) rotateX(-180deg);}
+  }
+  
+  @keyframes fall2 {
+    0% {top:-410px; transform: translateX(50px) rotateX(-90deg);}
+    100% {top:400px; transform: translateX(-350px) rotateX(180deg);}
+  }
+  
+  @keyframes fall3 {
+    0% {top:-430px; transform: translateX(0px) rotateX(-180deg);}
+    100% {top:400px; transform: translateX(-400px) rotateX(180deg);}
+  }
+  
+  @keyframes fall4 {
+    0% {top:-430px; transform: translateX(0px) rotateY(-180deg);}
+    100% {top:400px; transform: translateX(-400px) rotateY(180deg);}
+  }
+  
+  @keyframes fall5 {
+    0% {top:-410px; transform: translateX(-100px) rotateY(180deg);}
+    100% {top:400px; transform: translateX(250px) rotateY(-180deg);}
+  }
